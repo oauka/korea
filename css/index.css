@@ -8,7 +8,11 @@ body { font-family: '나눔고딕'; font-size: 16px; color: #333; }
 /* { overflow: hidden; } 블록요소가 float을 가지면 넓이는 자식한테 맞춰짐 */
 #header {
     box-shadow: 0px 2px 3px #ddd;
-    position: relative; z-index: 99;
+    /* position: relative; */
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    top:0; left:0; background: #fff;
 }
 #header h1 {
     float: left;
@@ -50,7 +54,7 @@ body { font-family: '나눔고딕'; font-size: 16px; color: #333; }
 .depth2 li:hover > a { background: #009688; color: #fff }
 
 /* section */
-
+#section { margin-top: 110px; }
 #section .slide > div {
     position: relative;
 }
@@ -169,6 +173,7 @@ body { font-family: '나눔고딕'; font-size: 16px; color: #333; }
     font-size: 18px;
     margin: 20px 20px 0 0;
 }
+#footer ul li a:focus { color: red; }
 #footer pre { float: right;
 font-size: 12px;
 line-height: 1.5;
